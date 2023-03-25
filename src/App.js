@@ -1,12 +1,8 @@
-import './App.css';
+import "./App.css";
+import Home from "./Components/Home";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Just testing Netlify deploy for now....</h1>
-      <h2>And git merging....</h2>
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
