@@ -5,6 +5,7 @@ const pcGamesApi = axios.create({
 });
 
 export const getAllReviews = async () => {
-  const allReviews = await pcGamesApi.get(`/reviews`);
-  return allReviews;
+  const allReviewsRawData = await pcGamesApi.get(`/reviews`);
+  const allReviewsArray = allReviewsRawData.data.reviews;
+  return allReviewsArray;
 };

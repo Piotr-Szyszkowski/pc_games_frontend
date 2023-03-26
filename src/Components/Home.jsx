@@ -3,7 +3,7 @@ import { useState } from "react";
 import { getAllReviews } from "./Utils/api";
 
 const Home = ()=>{
-    const [reviewsList, setReviewsList] = useState(["Some fake test stuff"])
+    const [reviewsList, setReviewsList] = useState([])
    const updateReviews = () =>{
     getAllReviews().then((reviewsFromApi)=>{setReviewsList(reviewsFromApi)})
    
@@ -13,6 +13,11 @@ const Home = ()=>{
         <section>
             <button onClick={updateReviews}>Change reviewsList</button>
             <p>Home placeholder</p>
+            {reviewsList.map((reviewObject)=>{
+                return (
+                    <h1 key={reviewObject.review_id}>{reviewObject.title}</h1>
+                )
+            })}
         </section>
     )
       
