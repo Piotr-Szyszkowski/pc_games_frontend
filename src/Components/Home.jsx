@@ -15,7 +15,10 @@ const Home = ()=>{
             <p>Home placeholder</p>
             {reviewsList.map((reviewObject)=>{
                 return (
+                    <div>
                     <h1 key={reviewObject.review_id}>{reviewObject.title}</h1>
+                    <img src={reviewObject.cover_img} alt="Cover" />
+                    </div>
                 )
             })}
         </section>
