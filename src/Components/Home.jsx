@@ -1,6 +1,8 @@
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { getAllReviews } from "../Utils/api";
+
 
 const Home = () => {
     const [reviewsList, setReviewsList] = useState([])
@@ -10,7 +12,9 @@ const Home = () => {
     }
     console.log(reviewsList);
     return (
+       
         <section>
+            <Link to="/">Game-Encyclopedia</Link>
             <button onClick={updateReviews}>Change reviewsList</button>
             <p>Home placeholder</p>
             {reviewsList.map((reviewObject) => {
@@ -22,6 +26,7 @@ const Home = () => {
                 )
             })}
         </section>
+       
     )
 
 
