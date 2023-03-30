@@ -1,18 +1,53 @@
 .Nav {
     background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    height: 40px;
+    box-sizing: border-box;
+    justify-content: space-between;
 }
 
-.home-link{
+
+.Nav .hamburger {
+    width: 31px;
+    height: 31px;
+    box-sizing: border-box;
+    margin-left: 5px;
+}
+
+.Nav .hamburger-line{
+    background-color: #ecf0f1;
+    display: block;
+    height: 4px;
+    margin: 4px 3px;
+    transition: all .3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.Nav .home-link{
     text-decoration: none;
+    padding-bottom: 4px;
 }
 
-.green {
+.Nav .green {
     color: rgb(22 207 22);
 }
 
-.main-title {
-    padding-top: 8px;
-    padding-bottom: 12px;
-    margin: 0;
+.Nav .main-title {
     color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+
 }
+
+.Nav .search-icon-container{
+    height: 100%;
+    width: 40px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.Nav .search-icon-container img {
+    height: 100%;
+}
+

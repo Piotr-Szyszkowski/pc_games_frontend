@@ -4,28 +4,13 @@ import { Link } from "react-router-dom";
 import "../Css/Home.css";
 
 const Home = () => {
-  //   const [reviewsList, setReviewsList] = useState([]);
-  //   const updateReviews = () => {
-  //     getAllReviews().then((reviewsFromApi) => {
-  //       setReviewsList(reviewsFromApi);
-  //     });
-  //   };
-  //   console.log(reviewsList);
   return (
     <section className="Home">
       <Link to="/reviews">
         <button>Game-Encyclopedia</button>
       </Link>
-      {/* <button onClick={updateReviews}>Change reviewsList</button> */}
+
       <p>Home placeholder</p>
-      {/* {reviewsList.map((reviewObject) => {
-        return (
-          <div>
-            <h1 key={reviewObject.review_id}>{reviewObject.title}</h1>
-            <img src={reviewObject.cover_img} alt="Cover" />
-          </div>
-        );
-      })} */}
     </section>
   );
 };
