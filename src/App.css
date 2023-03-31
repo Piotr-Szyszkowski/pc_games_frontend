@@ -1,5 +1,5 @@
 /* *****  Below for borders around all DOM elements - helps with css investigations. ***** */
-/* body *{
+/* body * {
   border: 1px;
   border-style: dotted;
   border-color: red;

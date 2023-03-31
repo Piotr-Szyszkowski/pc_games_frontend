@@ -1,0 +1,79 @@
+/* .ReviewCard * {
+  border: 1px;
+  border-style: dotted;
+  border-color: red;
+} */
+
+.ReviewCard {
+  box-sizing: border-box;
+  background-color: #128c1725;
+  width: 95%;
+  height: fit-content;
+  margin-top: 7px;
+  border-radius: 10px;
+}
+
+.ReviewCard .upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ReviewCard .upper-left {
+  padding-left: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ReviewCard .title {
+  color: #128c17;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  /* margin-top: 3px;
+  margin-left: 5px; */
+  font-size: 20px;
+}
+
+.ReviewCard .category {
+  font-weight: 500;
+  color: #128c17;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 16px;
+  border: 1px;
+  border-style: solid;
+  width: fit-content;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.ReviewCard .release_date {
+  font-weight: 400;
+  color: #128c17;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 14px;
+}
+
+.ReviewCard .cover_image-container {
+  box-sizing: border-box;
+  max-height: 140px;
+  min-width: 118px;
+  width: 118px;
+  padding-top: 6px;
+  padding-right: 6px;
+  /* padding: 2px; */
+  text-align: right;
+}
+
+.ReviewCard .cover_image {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 100%;
+}
+
+.ReviewCard .lower {
+  padding-left: 6px;
+  padding-right: 6px;
+}
