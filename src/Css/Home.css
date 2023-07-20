@@ -1,4 +1,17 @@
-.Home{
-    display: flex;
-    flex-direction: column;
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.Encyclopedia-link {
+  width: 230px;
+}
+
+.Encyclopedia-button {
+  width: 100%;
+  color: white;
+  background-color: rgb(17, 192, 17);
+  border: none;
 }

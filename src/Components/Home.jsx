@@ -7,8 +7,8 @@ import "../Css/Home.css";
 const Home = () => {
   return (
     <section className="Home">
-      <Link to="/reviews">
-        <button>Game-Encyclopedia</button>
+      <Link className="Encyclopedia-link" to="/reviews">
+        <button className="Encyclopedia-button">Game-Encyclopedia</button>
       </Link>
 
       <p>Home placeholder</p>
