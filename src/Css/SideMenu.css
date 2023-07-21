@@ -1,0 +1,17 @@
+.SideMenu-Container {
+  position: relative;
+}
+
+.SideMenu-Content-Wrapper {
+  position: absolute;
+  top: 0;
+  left: -250px; /* Set the initial position to be off-screen */
+  width: 250px;
+  height: 100vh;
+  background-color: #f0f0f0;
+  transition: left 0.3s ease; /* Add a smooth transition effect */
+}
+
+.SideMenu-Content-Wrapper.open {
+  left: 0;
+}

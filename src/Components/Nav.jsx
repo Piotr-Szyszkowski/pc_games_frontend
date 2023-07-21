@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import "../Css/Nav.css";
 import mag_glass from "../Assets/Icons/mag_glass.png";
+import SideMenu from "./SideMenu";
 
 function Nav() {
   return (
     <section className="Nav">
+      <SideMenu />
       <div className="hamburger">
         <span className="hamburger-line"></span>
         <span className="hamburger-line"></span>
