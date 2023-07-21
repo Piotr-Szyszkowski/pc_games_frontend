@@ -13,7 +13,7 @@ function Nav() {
 
   return (
     <section className="Nav-and-Menu">
-      <SideMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+      <SideMenu sideMenuProps={{ isMenuOpen, toggleMenu }} />
       <div className="Nav">
         <div className="hamburger" onClick={toggleMenu}>
           <span className="hamburger-line"></span>

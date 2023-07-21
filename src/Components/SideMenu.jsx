@@ -1,12 +1,8 @@
 // import { useState } from "react";
 import "../Css/SideMenu.css";
 
-function SideMenu({ isMenuOpen, toggleMenu }) {
-  //   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  //   const toggleMenu = () => {
-  //     setIsMenuOpen(!isMenuOpen);
-  //   };
+function SideMenu({ sideMenuProps }) {
+  const { isMenuOpen, toggleMenu } = sideMenuProps;
 
   console.log(toggleMenu, isMenuOpen);
   return (
