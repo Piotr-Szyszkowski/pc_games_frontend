@@ -1,18 +1,19 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "../Css/SideMenu.css";
 
-function SideMenu() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+function SideMenu({ isMenuOpen, toggleMenu }) {
+  //   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  //   const toggleMenu = () => {
+  //     setIsMenuOpen(!isMenuOpen);
+  //   };
 
+  console.log(toggleMenu, isMenuOpen);
   return (
     <div className="SideMenu-Container">
-      <button className="placeholder-button" onClick={toggleMenu}>
+      {/* <button className="placeholder-button" onClick={toggleMenu}>
         Open Menu
-      </button>
+      </button> */}
       <div className={`SideMenu-Content-Wrapper ${isMenuOpen ? "open" : ""}`}>
         <button className="placeholder-button" onClick={toggleMenu}>
           Close Menu
