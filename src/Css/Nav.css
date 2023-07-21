@@ -1,10 +1,18 @@
 .Nav {
   background-color: rgb(0, 0, 0);
   display: flex;
-  align-items: center;
   height: 40px;
+  align-items: center;
   box-sizing: border-box;
   justify-content: space-between;
+}
+
+.Nav .search-icon-container img {
+  height: 100%;
+}
+
+.Nav .search-icon-container {
+  height: 100%;
 }
 
 .Nav .hamburger {
@@ -17,15 +25,21 @@
 .Nav .hamburger-line {
   background-color: #ecf0f1;
   display: block;
+  transition: all 0.3s ease-in-out;
   height: 4px;
   margin: 4px 3px;
-  transition: all 0.3s ease-in-out;
   box-sizing: border-box;
 }
 
 .Nav .home-link {
   text-decoration: none;
   padding-bottom: 4px;
+}
+
+.Nav .search-icon-container {
+  width: 40px;
+  padding: 6px;
+  box-sizing: border-box;
 }
 
 .Nav .green {
@@ -36,15 +50,4 @@
   color: white;
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.Nav .search-icon-container {
-  height: 100%;
-  width: 40px;
-  padding: 6px;
-  box-sizing: border-box;
-}
-
-.Nav .search-icon-container img {
-  height: 100%;
 }

@@ -1,6 +1,9 @@
 /* *****  Below for borders around all DOM elements - helps with css investigations. ***** */
-/* body * {
-  border: 1px;
-  border-style: dotted;
-  border-color: red;
-} */
+body * {
+  border: 1px dotted red;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
