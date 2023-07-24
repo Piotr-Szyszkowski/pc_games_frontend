@@ -1,17 +1,47 @@
 .SideMenu-Container {
   position: relative;
+  width: 100%;
 }
 
 .SideMenu-Content-Wrapper {
   position: absolute;
   top: 0;
-  left: -250px; /* Set the initial position to be off-screen */
-  width: 250px;
-  height: 100vh;
+  left: -105%; /* Set the initial position to be off-screen */
+  width: 0;
+  height: 0;
   background-color: #f0f0f0;
-  transition: left 0.3s ease; /* Add a smooth transition effect */
+  transition: left 0.5s ease; /* Add a smooth transition effect */
 }
 
 .SideMenu-Content-Wrapper.open {
   left: 0;
+  width: 85%;
+  height: 100vh;
+}
+
+.SideMenu-CloseButton-Wrapper {
+  width: 33px;
+  height: 33px;
+  position: fixed;
+  top: 9px;
+  right: 9px;
+}
+
+.SideMenu-CloseButton-Wrapper.closed {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.SideMenu-CloseButton {
+  fill: #fff;
+  width: 100%;
+  height: 100%;
 }
