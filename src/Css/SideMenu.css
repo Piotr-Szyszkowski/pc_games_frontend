@@ -1,9 +1,8 @@
-.SideMenu-Container {
+.SideMenu {
   position: relative;
   width: 100%;
 }
-
-.SideMenu-Content-Wrapper {
+.SideMenu .MenuWrapper {
   position: absolute;
   top: 0;
   left: -105%; /* Set the initial position to be off-screen */
@@ -12,26 +11,50 @@
   background-color: #f0f0f0;
   transition: left 0.5s ease; /* Add a smooth transition effect */
 }
-
-.SideMenu-Content-Wrapper.open {
+.SideMenu .MenuWrapper.open {
   left: 0;
   width: 85%;
   height: 100vh;
 }
-
-.SideMenu-CloseButton-Wrapper {
+.SideMenu .MenuWrapper .CloseButton-Wrapper {
   width: 33px;
   height: 33px;
   position: fixed;
   top: 9px;
   right: 9px;
 }
-
-.SideMenu-CloseButton-Wrapper.closed {
+.SideMenu .MenuWrapper .CloseButton-Wrapper.closed {
   display: none;
 }
-
-.overlay {
+.SideMenu .MenuWrapper .CloseButton-Wrapper .CloseButton {
+  fill: #fff;
+  width: 100%;
+  height: 100%;
+}
+.SideMenu .MenuWrapper .MenuContent {
+  padding-top: 12px;
+}
+.SideMenu .MenuWrapper .MenuContent a {
+  display: block;
+  height: 45px;
+  padding-left: 10px;
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+  line-height: 44px;
+}
+.SideMenu .MenuWrapper .MenuContent a:focus {
+  background-color: rgba(133, 167, 135, 0.21);
+}
+.SideMenu .MenuWrapper .MenuContent a h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.6705882353);
+}
+.SideMenu .MenuLinkText {
+  font-family: "Roboto", sans-serif;
+}
+.SideMenu .overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -40,8 +63,4 @@
   background-color: rgba(0, 0, 0, 0.65);
 }
 
-.SideMenu-CloseButton {
-  fill: #fff;
-  width: 100%;
-  height: 100%;
-}
+/*# sourceMappingURL=SideMenu.css.map */

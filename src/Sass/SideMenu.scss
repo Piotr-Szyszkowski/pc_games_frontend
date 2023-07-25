@@ -1,0 +1,72 @@
+.SideMenu {
+  position: relative;
+  width: 100%;
+
+  .MenuWrapper {
+    position: absolute;
+    top: 0;
+    left: -105%; /* Set the initial position to be off-screen */
+    width: 0;
+    height: 0;
+    background-color: #f0f0f0;
+    transition: left 0.5s ease; /* Add a smooth transition effect */
+
+    &.open {
+      left: 0;
+      width: 85%;
+      height: 100vh;
+    }
+
+    .CloseButton-Wrapper {
+      width: 33px;
+      height: 33px;
+      position: fixed;
+      top: 9px;
+      right: 9px;
+
+      &.closed {
+        display: none;
+      }
+
+      .CloseButton {
+        fill: #fff;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .MenuContent {
+      padding-top: 12px;
+      a {
+        display: block;
+        height: 45px;
+        padding-left: 10px;
+        text-decoration: none;
+        border-bottom: 1px dotted black;
+        line-height: 44px;
+        &:focus {
+          background-color: rgb(133 167 135 / 21%);
+        }
+        h2 {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          font-family: "Roboto", sans-serif;
+          color: #000000ab;
+        }
+      }
+    }
+  }
+
+  .MenuLinkText {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+}
