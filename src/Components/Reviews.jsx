@@ -11,13 +11,13 @@ function Reviews() {
   useEffect(() => {
     setIsLodaing(true);
     getAllReviews().then((reviewsFromApi) => {
-      console.log(reviewsFromApi);
+      // console.log(reviewsFromApi);
       setReviewsList(reviewsFromApi);
       setIsLodaing(false);
     });
   }, []);
 
-  console.log(reviewsList);
+  // console.log(reviewsList);
   return (
     <section className="Reviews">
       {isloding ? (
