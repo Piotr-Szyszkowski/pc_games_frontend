@@ -6,6 +6,10 @@
   margin-top: 7px;
   border-radius: 10px;
 }
+.ReviewCard .content {
+  padding-left: 6px;
+  padding-top: 4px;
+}
 .ReviewCard .upper {
   display: flex;
   flex-direction: row;
@@ -51,25 +55,21 @@
 }
 .ReviewCard .cover_image-container {
   box-sizing: border-box;
-  max-height: 140px;
-  min-width: 118px;
-  width: 118px;
+  float: right;
+  width: 120px;
+  height: fit-content;
   padding-top: 6px;
+  padding-left: 6px;
   padding-right: 6px;
   /* padding: 2px; */
   text-align: right;
 }
 .ReviewCard .cover_image {
   box-sizing: border-box;
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
   border-radius: 5px;
 }
-.ReviewCard .lower {
-  padding-left: 6px;
-  padding-right: 6px;
-}
-.ReviewCard .lower .review_intro {
+.ReviewCard .review_intro {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
