@@ -35,6 +35,7 @@ function Reviews() {
             return (
               <ReviewCard
                 key={review_id}
+                id={review_id}
                 title={title}
                 category={category}
                 release_date={release_date}

@@ -9,3 +9,8 @@ export const getAllReviews = async () => {
   const allReviewsArray = allReviewsRawData.data.reviews;
   return allReviewsArray;
 };
+
+export const getSingleReview = async (review_id) => {
+  const singleReview = await pcGamesApi.get(`/reviews/${review_id}`);
+  return singleReview.data;
+};
